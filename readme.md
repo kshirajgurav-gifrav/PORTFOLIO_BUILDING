@@ -1,13 +1,23 @@
+# Simple Line Editor in C
 
-Activity 2: Git & GitHub Setup, and First Repository
+## Team Members
+1. KSHIRAJ K GURAV (SRN-R25EJ057)
+2. ABAAN SUFIYAN (R25EJ001)
+3. ARUN  M (R25EJ015)
 
-Description - Installed and configured Git, created a GitHub account, connecte it to VS Code, and pushed first program to apublic repository.
+## Features Implemented
+We implemented the 3 core features required for the competition:
+* Insert a line: Adds text at a specific line number.
+* Delete a line: Removes text at a specific line number.
+* Display the document: Shows all current lines and line numbers.
 
-Run Command : gcc hello.c -o hello && ./hello
-Collaboration Log:
+## Data Structure Justification
+We chose an array of strings (`char lines[100][500]`) to hold the document's lines in memory. We chose this because the document is small, it is highly efficient for accessing specific line numbers, and it makes shifting lines up or down straightforward. The trade-off is a fixed maximum document size (100 lines).
 
-Partner Name: Karibasavaraja  Built greet() function together.
+## How to Compile
+Compile the program using GCC in the terminal:
+gcc LineEditor.c -o lineeditor.exe
 
-Learnings: • Using GitLens extension in VS Code to inspect commit history, file blame, and line-by-line change authorship. • Using Live Share extension to start and join a real-time collaborative coding session. • Collaboratively write, review, and commit code with a peer, then verify authorship and history using GitLens.
-
-NAME-KSHIRAJ K GURAV SRN-R25EJ057
+## How to Run
+Run the executable in the terminal:
+.\lineeditor.exe
